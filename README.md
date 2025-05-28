@@ -32,18 +32,18 @@ A PowerShell script to analyze and display information about what caused your Wi
 1. Download the script file:  
    [`Show-WakeReasons.ps1`](Show-WakeReasons.ps1)
 2. Place it in a folder on your PC, e.g. `C:\Users\<youruser>\DevOps\Windows\Wakeup\`
-3. Open PowerShell 7 as Administrator.
+3. Open PowerShell 7 and run the script. You will be prrompted to elevate privileges to run it as Administrator.
 
 ---
 
 ## Usage
 
 ```powershell
-# Basic usage (run as Administrator)
-pwsh -NoProfile -File .\Show-WakeReasons.ps1
+# Basic usage
+pwsh .\Show-WakeReasons.ps1
 
 # With detailed output for deeper analysis
-pwsh -NoProfile -File .\Show-WakeReasons.ps1 -Detailed
+pwsh .\Show-WakeReasons.ps1 -Detailed
 
 # Specify how many days back to analyze (default: 3)
 pwsh -NoProfile -File .\Show-WakeReasons.ps1 -LastDays 7
